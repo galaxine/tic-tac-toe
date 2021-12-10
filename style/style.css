@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > footer {
+    position:sticky;
+    top: 100vh;
+}
+
+.header {
+    background-color: coral;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: fixed;
+    background-color: cornflowerblue;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+    
+}
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer {
+    background-color: darkcyan;
+}
+
