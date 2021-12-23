@@ -1,48 +1,73 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+
 html, body {
     height: 100%;
-    width: 100%;
+}
+
+body {
     display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+}
+
+
+.main {
+    flex: 1 0 auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    margin-top:20%;
+    display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
 }
 
-body > footer {
-    position:sticky;
-    top: 100vh;
-}
-
-.header {
-    background-color: coral;
-    width: 100%;
-}
-
-.main {
+.buttons {
     display: flex;
-    justify-self: center;
-    align-self: center;
-    position: fixed;
-    background-color: cornflowerblue;
+    gap: 5px;
+}
+.menu-button button{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 24px;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    background-color: darkgoldenrod;
-    
-}
-.menu-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
+.menu-button button:on
 .footer {
-    background-color: darkcyan;
+    flex: 0 0 auto;
 }
 
+
+.gridmenu {
+    margin-top: 25%;
+    width: 480px;
+    height: 480px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gridbox {
+    background-image: url("../img/X.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridboxGE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
