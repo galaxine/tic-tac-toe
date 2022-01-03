@@ -50,7 +50,7 @@ body {
 
 
 .gridmenu {
-    margin-top: 25%;
+    margin-top: 12.5%;
     width: 480px;
     height: 480px;
     display: grid;
@@ -60,7 +60,7 @@ body {
 }
 
 .gridbox {
-    background-image: url("../img/X.png");
+    background-image: url("../img/whitespace.png");
     display: flex;
     justify-content: center;
     align-items: center;
